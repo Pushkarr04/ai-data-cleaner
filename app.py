@@ -32,7 +32,19 @@ p, li, label, input, textarea, button, select,
 [data-testid="stSidebarNav"] a:hover {
     background: rgba(0,242,254,0.08) !important; padding-left: 12px;
 }
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer { visibility: hidden; }
+[data-testid="stSidebarCollapse"] {
+    background-color: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 8px !important;
+    color: #E2E8F0 !important;
+    transition: all 0.2s ease-in-out !important;
+}
+[data-testid="stSidebarCollapse"]:hover {
+    background-color: rgba(0, 242, 254, 0.1) !important;
+    border-color: rgba(0, 242, 254, 0.4) !important;
+    color: #00F2FE !important;
+}
 .stButton > button {
     font-family: 'Outfit', sans-serif !important; font-weight: 600;
     border-radius: 10px !important; border: 1.5px solid rgba(0,242,254,0.4) !important;
